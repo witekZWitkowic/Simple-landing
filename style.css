@@ -1,0 +1,373 @@
+:root {
+    --primary-color: #e1d5bb;
+    --secondary-color: #1e2e25;
+    --background-color: #fafcfd;
+    --buttons-roundness: 50px;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: var(--background-color);
+    margin: 0;
+    margin-top: 70px;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+.activeLi{
+    color: var(--secondary-color) !important;
+    transition: color 0.3s;
+}
+
+/* ---========== BUTTONS ==========--- */
+
+.page_button{
+    width: 200px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: var(--buttons-roundness);
+    border: 0;
+    padding: 15px 25px;
+    background-color: transparent;
+    cursor: pointer;
+
+    transition: all 0.15s;
+}
+.buttonPrimary {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: var(--secondary-color) 2px solid;
+}
+.buttonPrimary:hover{
+    background-color: transparent;
+    color: var(--secondary-color);
+}
+
+.buttonSecondary{
+    border: var(--secondary-color) 2px solid;
+    color: var(--secondary-color)
+}
+.buttonSecondary:hover{
+    background-color: var(--secondary-color);
+    color: var(--primary-color); 
+}
+
+
+/* ---========== NAVBAR ==========--- */
+header{
+    width: 100%;
+    background-color: var(--background-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.page_navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+    max-width: 100vw;
+    height: 80px;
+    margin: 0 auto;
+}
+.navLogo{
+    max-width: 160px;
+}
+.navList{
+    display: flex;
+    justify-content: space-evenly;
+}
+.navList li {
+    font-size: 20px;
+    list-style-type: none;
+    margin: 0 20px;
+    color: var(--primary-color);
+    transition: color 0.3s;
+    cursor: pointer;
+}
+.navList li:hover{
+    color: var(--secondary-color);
+}
+.navList li a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* ---========== HERO ==========--- */
+
+.page_heroContainer{
+    scroll-margin-top: 50px;
+    display: flex;
+}
+.heroCTA{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+
+    padding: 0 100px;
+}
+.heroCTA .heroTexts{
+    margin-bottom: 50px;
+}
+.heroCTA h1 {
+    color: var(--secondary-color);
+    font-size: 72px;
+    font-weight: bold;
+    max-width: 35vw;
+
+    margin: 10px 0;
+}
+.heroCTA span {
+    color: var(--secondary-color);
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.heroCTA .heroButtons{
+    display: flex;
+    gap: 25px;
+}
+
+.heroImage {
+    flex: 1;
+}
+.heroImage img{
+    max-width: 50vw;
+    height: 100%;
+}
+
+/* ---========== ABOUT ==========--- */
+
+.page_aboutContainer{
+    scroll-margin-top: 50px;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 100px;
+}
+.aboutHeading{
+    margin: 10px 0;
+    font-size: 48px;
+    color: var(--secondary-color);
+}
+.aboutParagraph{
+    max-width: 70%;
+    margin: 10px 0 40px;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: thin;
+    color: var(--secondary-color);
+}
+.aboutImages{
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+}
+.aboutImage img{
+    max-width: 400px;
+}
+
+/* ---========== OUR SERVICE ==========--- */
+.page_ourService{
+    scroll-margin-top: 50px;
+    display: flex;
+}
+.ourService{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+
+    padding: 0 120px 0 100px;
+}
+.ourServiceImage{
+    object-fit: cover;
+    object-position: top;
+    width: 50vw;
+    max-height: 650px;
+}
+.ourService .outServiceTag{
+    font-size: 18px;
+    font-weight: thin;
+    color: var(--primary-color);
+}
+.ourService .ourServiceHeading {
+    color: var(--secondary-color);
+    font-size: 62px;
+    font-weight: bold;
+    max-width: 35vw;
+    margin: 10px 0 30px;
+}
+.ourService .ourServiceParagraph {
+    color: var(--secondary-color);
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 100;
+    margin-bottom: 50px;
+}
+
+/* ---========== CCONTACT ==========--- */
+
+.page_contact{
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+    padding: 50px 100px;
+}
+.contactHeader{
+    margin: 10px 0;
+    font-size: 48px;
+    color: var(--primary-color);
+}
+.contactFormInformationContainer{
+    display: flex;
+    align-items: start;
+    gap: 50px;
+    padding: 20px 0;
+}
+.contactInformationContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.contactInformation{
+    display: flex;
+    justify-content: start;
+    align-items: self-start;
+    gap: 20px;
+}
+.contactInformation-icon{
+    width: 30px;
+    fill: var(--primary-color);
+}
+.contactData p{
+    color: var(--primary-color);
+}
+.contactData-header{
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+.contactData-paragraph{
+    font-size: 12px;
+    font-weight: lighter;
+    margin: 5px 0 15px;
+}
+.contactData-data{
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.contactForm{
+    width: 400px;
+    border: var(--secondary-color) 2px solid;
+    border-radius: 20px;
+}
+.contactForm input, .contactForm textarea{
+    width: 90%;
+    height: 25px;
+    padding: 10px 20px;
+    margin-bottom: 15px;
+    background-color: transparent;
+    color: var(--primary-color);
+
+    font-size: 15px;
+    border: var(--primary-color) 1px solid;
+    border-radius: 10px;
+    resize: none;
+    outline: none;
+    transition: all 0.3s;
+}
+.contactForm textarea{
+    height: 150px;
+}
+.contactForm input:focus-visible, .contactForm textarea:focus{
+    border: var(--background-color) 1px solid;
+}
+.contactForm input::placeholder, .contactForm textarea::placeholder{
+    color: var(--primary-color);
+    opacity: 0.3;
+}
+.contactForm input:-webkit-autofill {
+    background-color: var(--secondary-color) !important;
+    -webkit-text-fill-color: var(--secondary-color) !important;
+}
+.contactButtonContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contactButtonContainer button{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: var(--primary-color) 2px solid;
+}
+.contactButtonContainer button:hover{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+/* ---========== FAQ ==========--- */
+
+.page_faqsContainer{
+    scroll-margin-top: 50px;
+    max-width: 1000px;
+    padding: 100px 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.page_faq{
+    max-width: 700px;
+    margin-top: 20px;
+    padding: 15px 25px;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+.faqQuestion{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.faqTitle{
+    font-size: 28px;
+}
+.faqDropdownIcon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: var(--secondary-color);
+    transition: all 0.4s;
+}
+.faqText {
+    font-size: 22px;
+    line-height: 28px;
+    padding-top: 10px;
+}
+.faqAnswer {
+    overflow: hidden;
+    max-height: 0px;
+    transition: all 0.4s;
+}
+.active .faqAnswer {
+    max-height: 300px;
+}
+.active .faqDropdownIcon {
+    transform: rotate(180deg);
+}
+
