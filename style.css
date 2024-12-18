@@ -12,7 +12,7 @@ body{
     margin: 0;
     margin-top: 70px;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif ;
     box-sizing: border-box;
 }
 .activeLi{
@@ -215,6 +215,7 @@ header{
 /* ---========== CCONTACT ==========--- */
 
 .page_contact{
+    scroll-margin-top: 50px;
     background-color: var(--secondary-color);
     display: flex;
     flex-direction: column;
@@ -239,6 +240,7 @@ header{
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding: 20px 0;
 }
 .contactInformation{
     display: flex;
@@ -288,6 +290,7 @@ header{
     resize: none;
     outline: none;
     transition: all 0.3s;
+    font-family: Arial, Helvetica, sans-serif !important;
 }
 .contactForm textarea{
     height: 150px;
@@ -336,7 +339,22 @@ header{
     padding: 15px 25px;
     border-radius: 20px;
     cursor: pointer;
-    background-color: var(--primary-color);
+    background-color: transparent;
+    border: var(--primary-color) 2px solid;
+    color: var(--secondary-color);
+    transition: all 0.3s;
+}
+.faqHeader{
+    margin: 10px 0;
+    font-size: 48px;
+    color: var(--secondary-color);
+}
+.faqParagraph{
+    max-width: 70%;
+    margin: 10px 0 30px;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: thin;
     color: var(--secondary-color);
 }
 .faqQuestion{
@@ -345,7 +363,7 @@ header{
     align-items: center;
 }
 .faqTitle{
-    font-size: 28px;
+    font-size: 24px;
 }
 .faqDropdownIcon{
     display: flex;
@@ -355,7 +373,7 @@ header{
     transition: all 0.4s;
 }
 .faqText {
-    font-size: 22px;
+    font-size: 18px;
     line-height: 28px;
     padding-top: 10px;
 }
@@ -367,7 +385,29 @@ header{
 .active .faqAnswer {
     max-height: 300px;
 }
+.page_faq.active{
+    border: var(--secondary-color) 2px solid;
+}
 .active .faqDropdownIcon {
     transform: rotate(180deg);
 }
 
+/* ---========== FOOTER ==========--- */
+
+footer{
+    background-color: var(--secondary-color);
+    height: 120px;
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footerImage{
+    width: 160px;
+    filter: brightness(100);
+}
+.footerCopywriting{
+    color: var(--primary-color);
+    font-size: 12px;
+
+}
