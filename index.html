@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" type="text/css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="favicon.png">
     <script src="script.js" defer></script>
     
-    <title>Document</title>
+    <title>purenature</title>
 </head>
 <body>
     <header>
         <nav class="page_navbar">
-            <img class="navLogo" src="logo.png"/>
+            <img class="navLogo" src="logo.png" alt="Navbar logo"/>
             <div class="hamburger" onclick="toggleMenu()"></div>
             <ul class="navList">
                 <li>
@@ -40,12 +41,12 @@
                     <span>Premium candles made with the most selected, natural ingredients.</span>
                 </div>
                 <div class="heroButtons">
-                    <button class="page_button buttonSecondary">Check the offer</button>
-                <button class="page_button buttonPrimary">Contact Us</button>
+                    <a href="#service"><button class="page_button buttonSecondary">Check the offer</button></a>
+                <a href="#contact"><button class="page_button buttonPrimary">Contact Us</button></a>
                 </div>
             </div>
             <div class="heroImage">
-                <img src="hero.png"/>
+                <img src="hero.png" alt="Candles image"/>
             </div>
         </section>
         <section class="page_aboutContainer" id="about">
@@ -57,19 +58,19 @@
             </p>
             <div class="aboutImages">
                 <div class="aboutImage">
-                    <img src="natural.png"/>
+                    <img src="natural.png" alt="Twig image"/>
                 </div>
                 <div class="aboutImage">
-                    <img src="unique.png"/>
+                    <img src="unique.png" alt="Scents image"/>
                 </div>
                 <div class="aboutImage">
-                    <img src="endless.png"/>
+                    <img src="endless.png" alt="Hourglass image"/>
                 </div>
             </div>
         </section>
         <section class="page_ourService" id="service">
 
-                <img class="ourServiceImage" src="ourServices2.png"/>
+                <img class="ourServiceImage" src="ourServices2.png" alt="Our Service"/>
 
             <div class="ourService">
                 <span class="outServiceTag">Turn thoughts into fragrance</span>
@@ -79,9 +80,9 @@
                 <p class="ourServiceParagraph">
                     Our services focus on crafting exquisite <strong>scented candles</strong> that are truly <strong>tailor-made</strong> to suit your preferences. We empower you to create unique blends of natural ingredients, making every candle a <strong>personalized</strong> and <strong>one-of-a-kind</strong> masterpiece. Each piece is thoughtfully handmade, reflecting your individual style and vision. Contact us and let your perfect evening start here.
                 </p>
-                <button class="page_button buttonPrimary">
+                <a href="#contact"><button class="page_button buttonPrimary">
                     Contact Us
-                </button>
+                </button></a>
             </div>
         </section>
         <section class="page_contact" id="contact">
@@ -119,16 +120,18 @@
                         </div>
                     </div>
                 </div>
-                <form class="contactForm" action="#" method="post">
+                <form class="contactForm" action="#" method="post" novalidate>
                     <div class="contactInput">
-                        <input type="text" id="name" name="name" placeholder="Your name" required>
+                        <input type="text" id="name" name="name" placeholder="Your name">
+                        <span class="errorMessage">Please, write a correct name.</span>
                     </div>
-            
                     <div class="contactInput">
                         <input class="inputEmail" type="email" id="email" name="email" placeholder="Your email">
+                        <span class="errorMessage">The e-mail address is not valid.</span>
                     </div>
                     <div class="contactInput">
                         <textarea id="message" name="message" rows="4" placeholder="What can we do for you?"></textarea>
+                        <span class="errorMessage">Please, write a message.</span>
                     </div>
                     <div class="contactButtonContainer">
                         <button type="submit" class="page_button buttonSecondary">Submit</button>
@@ -207,7 +210,7 @@
         </section>
     </main>
     <footer>
-        <img class="footerImage" src="logo.png"/>
+        <img class="footerImage" src="logo.png" alt="Footer Logo"/>
         <p class="footerCopywriting"> Copyright © 2024 purenature All Rights Reserved</p>
     </footer>
 </body>
