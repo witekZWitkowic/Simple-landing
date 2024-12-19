@@ -1,5 +1,5 @@
 const faqQuestions = document.querySelectorAll('.page_faq')
-const form = document.querySelector('.contactForm')
+const form = document.querySelector('.contact__form')
 
 //FAQ open/close
 faqQuestions.forEach(faq => {
@@ -33,7 +33,7 @@ document.addEventListener("scroll", () => {
 
 //Hamburger menu open/close
 function toggleMenu() {
-    const navList = document.querySelector('.navList');
+    const navList = document.querySelector('.navbar__list');
     const hamburger = document.querySelector('.hamburger');
     const allLis = document.querySelectorAll('li a')
     const body = document.querySelector('body');
@@ -63,7 +63,7 @@ function toggleMenu() {
     const nameInput = document.getElementById('name');
     const emailInput = document.getElementById('email');
     const messageInput = document.getElementById('message');
-    const submitBtn = document.querySelector('.contactButtonContainer button')
+    const submitBtn = document.querySelector('.contact__button--container button')
 
     const nameValue = nameInput.value.trim();
     const emailValue = emailInput.value.trim();
@@ -99,7 +99,6 @@ function toggleMenu() {
     }
 
     if (isValid) {
-        console.log('Formularz przeszedł walidację!');
         nameInput.value = ''
         emailInput.value = ''
         messageInput.value = 'Thank you for the message!'

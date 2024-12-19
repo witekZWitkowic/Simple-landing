@@ -78,7 +78,7 @@ header{
     top: 0;
     left: 0;
 }
-.page_navbar{
+.navbar__container{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -87,14 +87,14 @@ header{
     height: 80px;
     margin: 0 auto;
 }
-.navLogo{
+.navbar__logo{
     max-width: 160px;
 }
-.navList{
+.navbar__list{
     display: flex;
     justify-content: space-evenly;
 }
-.navList li {
+.navbar__list li {
     font-size: 20px;
     list-style-type: none;
     margin: 0 20px;
@@ -102,10 +102,10 @@ header{
     transition: color 0.3s;
     cursor: pointer;
 }
-.navList li:hover{
+.navbar__list li:hover{
     color: var(--secondary-color);
 }
-.navList li a {
+.navbar__list li a {
     color: inherit;
     text-decoration: none;
 }
@@ -158,11 +158,11 @@ header{
 
 /* ---========== HERO ==========--- */
 
-.page_heroContainer{
+.hero__container{
     scroll-margin-top: 50px;
     display: flex;
 }
-.heroCTA{
+.hero__CTA--container{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -170,10 +170,10 @@ header{
 
     padding: 0 100px;
 }
-.heroCTA .heroTexts{
+.hero__CTA--container .hero__texts--container{
     margin-bottom: 30px;
 }
-.heroCTA h1 {
+.hero__CTA--container h1 {
     color: var(--secondary-color);
     font-size: 72px;
     line-height: 66px;
@@ -182,21 +182,21 @@ header{
 
     margin: 10px 0;
 }
-.heroCTA span {
+.hero__CTA--container span {
     color: var(--secondary-color);
     font-size: 20px;
     font-weight: 100;
 }
 
-.heroCTA .heroButtons{
+.hero__CTA--container .hero__buttons--container{
     display: flex;
     gap: 25px;
 }
 
-.heroImage {
+.hero__image {
     flex: 1;
 }
-.heroImage img{
+.hero__image img{
     max-width: 50vw;
     width: 100%;
     height: 100%;
@@ -205,7 +205,7 @@ header{
 
 /* ---========== ABOUT ==========--- */
 
-.page_aboutContainer{
+.about__container{
     scroll-margin-top: 50px;
     background-color: var(--primary-color);
     display: flex;
@@ -214,12 +214,12 @@ header{
     align-items: center;
     padding: 40px 100px;
 }
-.aboutHeading{
+.about__heading{
     margin: 10px 0;
     font-size: 48px;
     color: var(--secondary-color);
 }
-.aboutParagraph{
+.about__paragraph{
     max-width: 70%;
     margin: 10px 0 40px;
     font-size: 18px;
@@ -227,23 +227,23 @@ header{
     font-weight: thin;
     color: var(--secondary-color);
 }
-.aboutImages{
+.about__images--container{
     display: flex;
     justify-content: space-between;
 
     width: 100%;
 }
-.aboutImage img{
+.about__image img{
     max-width: 33vw;
     width: 100%;
 }
 
 /* ---========== OUR SERVICE ==========--- */
-.page_ourService{
+.service__container{
     scroll-margin-top: 50px;
     display: flex;
 }
-.ourService{
+.service__texts--container{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -251,25 +251,25 @@ header{
 
     padding: 0 120px 0 100px;
 }
-.ourServiceImage{
+.service__image{
     object-fit: cover;
     object-position: top;
     width: 50vw;
     max-height: 650px;
 }
-.ourService .outServiceTag{
+.service__texts--container .service__tag{
     font-size: 18px;
     font-weight: thin;
     color: var(--primary-color);
 }
-.ourService .ourServiceHeading {
+.service__texts--container .service__heading {
     color: var(--secondary-color);
     font-size: 62px;
     font-weight: bold;
     max-width: 35vw;
     margin: 10px 0 30px;
 }
-.ourService .ourServiceParagraph {
+.service__texts--container .service__paragraph {
     color: var(--secondary-color);
     font-size: 22px;
     line-height: 28px;
@@ -279,7 +279,7 @@ header{
 
 /* ---========== CONTACT ==========--- */
 
-.page_contact{
+.contact__container{
     scroll-margin-top: 50px;
     background-color: var(--secondary-color);
     display: flex;
@@ -290,12 +290,12 @@ header{
 
     padding: 50px 100px;
 }
-.contactHeader{
+.contact__header{
     margin: 10px 0;
     font-size: 48px;
     color: var(--primary-color);
 }
-.contactFormInformationContainer{
+.contact__informationForm--container{
     max-width: 1000px;
     width: 100%;
     justify-content: center;
@@ -304,19 +304,19 @@ header{
     gap: 50px;
     padding: 20px 0;
 }
-.contactInformationContainer{
+.contact__information--container{
     display: flex;
     flex-direction: column;
     gap: 20px;
     padding: 20px 0;
 }
-.contactInformation{
+.contact__information{
     display: flex;
     justify-content: start;
     align-items: self-start;
     gap: 20px;
 }
-.contactInformation-icon{
+.contact__information-icon{
     width: 30px;
     fill: var(--primary-color);
 }
@@ -339,11 +339,11 @@ header{
     font-weight: bold;
 }
 
-.contactForm{
+.contact__form{
     max-width: 400px;
     width: 100%;
 }
-.contactForm input, .contactForm textarea{
+.contact__form input, .contact__form textarea{
     width: 90%;
     height: 25px;
     padding: 10px 20px;
@@ -359,41 +359,41 @@ header{
     transition: all 0.3s;
     font-family: Arial, Helvetica, sans-serif !important;
 }
-.contactInput{
+.contact__input{
     position: relative;
     display: flex;
 }
-.contactForm textarea{
+.contact__form textarea{
     height: 150px;
 }
-.contactForm input:focus-visible, .contactForm textarea:focus{
+.contact__form input:focus-visible, .contact__form textarea:focus{
     border: var(--background-color) 1px solid;
 }
-.contactForm input::placeholder, .contactForm textarea::placeholder{
+.contact__form input::placeholder, .contact__form textarea::placeholder{
     color: var(--primary-color);
     opacity: 0.3;
 }
-.contactForm input:-webkit-autofill {
+.contact__form input:-webkit-autofill {
     background-color: var(--secondary-color) !important;
     -webkit-text-fill-color: var(--secondary-color) !important;
 }
-.contactButtonContainer{
+.contact__button--container{
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.contactButtonContainer button{
+.contact__button--container button{
     background-color: var(--secondary-color);
     color: var(--primary-color);
     border: var(--primary-color) 2px solid;
 }
-.contactButtonContainer button:hover{
+.contact__button--container button:hover{
     background-color: var(--primary-color);
     color: var(--secondary-color);
 }
 /* ---========== FAQ ==========--- */
 
-.page_faqsContainer{
+.faq__container{
     scroll-margin-top: 50px;
     max-width: 1000px;
     padding: 100px 0;
@@ -415,12 +415,12 @@ header{
     color: var(--secondary-color);
     transition: all 0.3s;
 }
-.faqHeader{
+.faq__header{
     margin: 10px 0;
     font-size: 48px;
     color: var(--secondary-color);
 }
-.faqParagraph{
+.faq__paragraph{
     max-width: 70%;
     margin: 10px 0 30px;
     font-size: 18px;
@@ -428,33 +428,33 @@ header{
     font-weight: thin;
     color: var(--secondary-color);
 }
-.faqQuestion{
+.faq__question{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.faqTitle{
+.faq__title{
     font-size: 24px;
 }
-.faqDropdownIcon{
+.faq__dropdown--icon{
     display: flex;
     justify-content: center;
     align-items: center;
     fill: var(--secondary-color);
     transition: all 0.4s;
 }
-.faqText {
+.faq__answer--text {
     color: var(--primary-color);
     font-size: 18px;
     line-height: 28px;
     padding-top: 10px;
 }
-.faqAnswer {
+.faq__answer {
     overflow: hidden;
     max-height: 0px;
     transition: all 0.4s;
 }
-.active .faqAnswer {
+.active .faq__answer {
     max-height: 300px;
 }
 .page_faq.active{
@@ -462,7 +462,7 @@ header{
     background-color: var(--secondary-color);
     border: var(--secondary-color) 2px solid;
 }
-.active .faqDropdownIcon {
+.active .faq__dropdown--icon {
     transform: rotate(180deg);
     fill: var(--primary-color);
 }
@@ -490,62 +490,62 @@ footer{
 @media only screen and (max-width: 1440px) {
     /* ---========== HERO ==========--- */
 
-    .page_heroContainer{
+    .hero__container{
         scroll-margin-top: 70px;
     }
-    .heroCTA{
+    .hero__CTA--container{
         padding: 0 50px 0 70px;
     }
-    .heroCTA .heroTexts{
+    .hero__CTA--container .hero__texts--container{
         margin-bottom: 50px;
     }
-    .heroCTA h1 {
+    .hero__CTA--container h1 {
         font-size: 68px;
         line-height: 50px;
     }
 
-    .heroImage img{
+    .hero__image img{
         max-width: 50vw;
     }
 }
 
 @media only screen and (max-width: 1200px) {
     /* ---========== HERO ==========--- */
-    .heroCTA h1 {
+    .hero__CTA--container h1 {
         font-size: 58px;
         line-height: 50px;
     }
-    .heroCTA .heroTexts{
+    .hero__CTA--container .hero__texts--container{
         margin-bottom: 30px;
     }
 
     /* ABOUT */
-    .page_aboutContainer {
+    .about__container {
         padding: 40px 70px;
     }
-    .aboutParagraph{
+    .about__paragraph{
         max-width: 80%;
         line-height: 22px;
     }
 
     /* ---========== OUR SERVICE ==========--- */
-    .page_ourService{
+    .service__container{
         scroll-margin-top: 70px;
     }
-    .ourService{
+    .service__texts--container{
         padding: 0 70px 0 50px;
     }
 
-    .ourService .outServiceTag{
+    .service__texts--container .service__tag{
         font-size: 16px;
         font-weight: thin;
         color: var(--primary-color);
     }
-    .ourService .ourServiceHeading {
+    .service__texts--container .service__heading {
         font-size: 52px;
         margin: 10px 0;
     }
-    .ourService .ourServiceParagraph {
+    .service__texts--container .service__paragraph {
         font-size: 18px;
         line-height: 24px;
         margin-bottom: 30px;
@@ -555,7 +555,7 @@ footer{
 @media only screen and (max-width: 1024px) {
     /* ---========== NAVBAR ==========--- */
 
-    .navList li {
+    .navbar__list li {
         font-size: 16px;
         list-style-type: none;
         margin: 0 20px;
@@ -564,18 +564,18 @@ footer{
         cursor: pointer;
     }
     /* ---========== HERO ==========--- */
-    .heroCTA h1 {
+    .hero__CTA--container h1 {
         font-size: 48px;
         line-height: 42px;
     }
 
-    .aboutParagraph{
+    .about__paragraph{
         max-width: 90%;
         line-height: 22px;
     }
 
     /* ---========== OUR SERVICE ==========--- */
-    .ourService .ourServiceParagraph {
+    .service__texts--container .service__paragraph {
         font-size: 18px;
         line-height: 22px;
         margin-bottom: 30px;
@@ -588,13 +588,13 @@ footer{
         display: block;
     }
     /* ---========== NAVBAR ==========--- */
-    .page_navbar{
+    .navbar__container{
         padding: 0 50px;
     }
-    .navList li {
+    .navbar__list li {
         font-size: 32px;
     }
-    .navList {
+    .navbar__list {
         position: fixed;
         top: 0;
         right: -100%;
@@ -607,83 +607,85 @@ footer{
         padding: 100px 20px;
         transition: right 0.3s ease-in-out;
     }
-    .navList.show {
+    .navbar__list.show {
         right: 0;
     }
     /* ---========== HERO ==========--- */
 
-    .page_heroContainer{
+    .hero__container{
         display: block;
         scroll-margin-top: 70px;
     }
-    .heroCTA{
+    .hero__CTA--container{
         padding: 50px;
         justify-content: center;
     }
-    .heroCTA .heroTexts{
+    .hero__CTA--container .hero__texts--container{
         margin-bottom: 50px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    .heroCTA h1 {
+    .hero__CTA--container h1 {
         text-align: center;
         max-width: 100vw;
         font-size: 68px;
         line-height: 60px;
     }
-    .heroCTA span {
+    .hero__CTA--container span {
         text-align: center;
         font-size: 18px;
     }
+    .hero__buttons--container{
+        justify-content: center;
+    }
 
-
-    .heroImage {
+    .hero__image {
         display: none;
     }
     
-    .page_aboutContainer {
+    .about__container {
         padding: 50px;
     }
-    .aboutParagraph{
+    .about__paragraph{
         max-width: 100%;
         font-size: 16px;
         text-align: center;
     }
-    .contactInformationContainer{
+    .contact__information--container{
         flex: 1;
     }
-    .contactForm{
+    .contact__form{
         flex: 1;
     }
 
     /* ---========== NAVBAR ==========--- */
 
 
-    .ourServiceImage{
+    .service__image{
         display: none;
     }
-    .ourService{
+    .service__texts--container{
         padding: 50px;
         justify-content: center;
         align-items: center;
     }
-    .ourService .ourServiceHeading {
+    .service__texts--container .service__heading{
         text-align: center;
         max-width: 100vw;
         font-size: 48px;
     }
-    .ourService .ourServiceParagraph{
+    .service__texts--container .service__paragraph{
         max-width: 100%;
         font-size: 16px;
         text-align: center;
     }
-    .page_contact {
+    .contact__container {
         padding: 50px;
     }
 
-    .page_faqsContainer{
+    .faq__container{
         padding: 50px;
     }
     footer{
@@ -696,33 +698,33 @@ footer{
 
 }
 @media only screen and (max-width: 600px) {
-    .heroButtons{
+    .hero__buttons--container{
         flex-direction: column;
         align-items: center;
     }
-    .aboutImages{
+    .about__images--container{
         align-items: center;
         flex-wrap: wrap;
         justify-content: space-evenly;
         gap: 20px;
     }
-    .aboutImage img{
+    .about__image img{
         max-width: 33vw;
         width: 100%;
     }
-    .contactFormInformationContainer{
+    .contact__informationForm--container{
         flex-direction: column-reverse;
         align-items: center;
     }
     
-    .contactInformationContainer{
+    .contact__information--container{
         width: 100%;
         align-items: center;
     }
-    .faqTitle{
+    .faq__title{
         font-size: 20px;
     }
-    .faqText{
+    .faq__answer--text{
         font-size: 16px;
         line-height: 20px;
     }
@@ -737,32 +739,32 @@ footer{
 }
 @media only screen and (max-width: 430px) {
 
-    .page_navbar{
+    .navbar__container{
         padding: 0 20px;
     }
-    .heroCTA{
+    .hero__CTA--container{
         padding: 30px 20px;
     }
-    .heroCTA span {
+    .hero__CTA--container span {
         text-align: center;
         font-size: 20px;
     }
-    .heroCTA .heroButtons{
+    .hero__CTA--container .hero__buttons--container{
         gap: 15px;
     }
-    .page_aboutContainer, .ourService, .heroCTA, .page_contact, .page_faqsContainer{
+    .about__container, .service__texts--container, .hero__CTA--container, .contact__container, .faq__container{
         padding: 30px 20px;
     }
-    .page_navbar{
+    .navbar__container{
         padding: 0 20px;
     }
     .page_faq{
         padding: 10px 15px;
     }
-    .faqTitle{
+    .faq__title{
         font-size: 18px;
     }
-    .faqText{
+    .faq__answer--text{
         font-size: 16px;
         line-height: 18px;
         margin: 10px 0;
@@ -770,14 +772,14 @@ footer{
     
 }
 @media only screen and (max-width: 375px) {
-    .heroCTA h1{
+    .hero__CTA--container h1{
         font-size: 56px;
         line-height: 50px;
     }
-    .heroCTA span {
+    .hero__CTA--container span {
         font-size: 18px;
     }
-    .aboutImage img{
+    .about__image img{
         max-width: 30vw;
     }
     
